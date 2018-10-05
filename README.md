@@ -6,8 +6,8 @@ The Android application component of the Shopping Companion.
 
 * [Getting Started](#getting-started)
 * [Working with Files](#working-with-files)
-    [Editing Page Layout](#editing-page-layout)
-    [Editing Strings](#editing-strings)
+  * [Editing Page Layout](#editing-page-layout)
+  * [Editing Strings](#editing-strings)
 * [Current Page Statuses](#current-page-statuses)
 
 ## Getting Started
@@ -34,12 +34,10 @@ app/res/values/strings.xml
 
 ## Current Page Statuses
 
-* activity_main.xml⋅⋅
+* activity_main.xml
+  * The main entry point to the app. Returning users may log in here.
+  * **Finished layout. No functionality. No links between pages.**
 
-⋅⋅⋅The main entry point to the app. Returning users may log in here.
-⋅⋅⋅**Finished layout. No functionality. No links between pages.**
-
-* sign_up.xml⋅⋅
-
-⋅⋅⋅New users may sign in here.
-⋅⋅⋅**Just getting started.**
+* sign_up.xml
+  * New users may sign in here.
+  * **Just getting started.**
