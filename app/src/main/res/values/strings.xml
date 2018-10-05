@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Shopping Companion</string>
+
+    <string name="button_at_store">I\'m at the store</string>
+    <string name="button_change_password">Change password</string>
+    <string name="button_forgot_password">Forgot password</string>
+    <string name="button_log_in">Log in</string>
+    <string name="button_log_out">Log out</string>
+    <string name="button_sign_up">Sign up</string>
+    <string name="button_skip">Skip for now</string>
+    <string name="button_submit">Submit</string>
+
+    <string name="edit_add_item">Add an item</string>
+    <string name="edit_confirm_password">Confirm password</string>
+    <string name="edit_customer_id">Enter customer ID</string>
+    <string name="edit_email_address">Enter email address</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="edit_password">Enter password</string>
+    <string name="edit_username">Enter username</string>
+
+    <string name="title_change_password">Change password</string>
+    <string name="title_customer_id">Please enter your 12-digit customer ID</string>
+    <string name="title_forgot_password">Forgot password</string>
+    <string name="title_log_in">Welcome back!</string>
+    <string name="title_sign_up">Welcome to ARGC’s Shopping Companion</string>
+
+    <string name="subtitle_change_password">Choose a new password</string>
+    <string name="subtitle_customer_id">This can be found near the barcode on your ARGC Rewards Card</string>
+    <string name="subtitle_forgot_password">Check your email for a secure link to get back into your account</string>
+    <string name="subtitle_log_in">Log in here</string>
+    <string name="subtitle_sign_up">Sign up here</string>
 </resources>
