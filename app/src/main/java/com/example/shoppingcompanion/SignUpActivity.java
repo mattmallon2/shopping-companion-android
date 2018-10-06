@@ -8,14 +8,12 @@ import android.widget.EditText;
 
 import java.util.regex.Pattern;
 
-public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_EMAIL = "com.example.myfirstapp.EXTRA_EMAIL";
-    public static final String EXTRA_PASSWORD = "com.example.myfirstapp.EXTRA_PASSWORD";
+public class SignUpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sign_up);
     }
 
     /** Called when the user taps forgot password */
@@ -24,29 +22,34 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /** Called when the user taps sign up */
-    public void directToSignUp(View view) {
-        Intent intent = new Intent(this, SignUpActivity.class);
+    /** Called when the user taps log in */
+    public void directToLogIn(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
     /** Called when the user taps submit */
-    public void submitLogIn(View view) {
+    public void submitSignUp(View view) {
         Intent intent = new Intent(this, LinkToCustomerActivity.class);
         Bundle extras = new Bundle();
 
         /* Extract out user input from email and password fields */
         EditText editTextEmail = (EditText) findViewById(R.id.editText2);
         String email = editTextEmail.getText().toString();
+
         EditText editTextPassword = (EditText) findViewById(R.id.editText);
         String password = editTextPassword.getText().toString();
 
+        EditText editTextConfirmPassword = (EditText) findViewById(R.id.editText3);
+        String confirmPassword = editTextPassword.getText().toString();
+
         /* Confirm valid input and process email and password */
         email = getValidEmailInput(email);
-        password = getValidPasswordInput(password);
+        password = getValidPasswordInput(password, confirmPassword);
 
         extras.putString("EXTRA_EMAIL", email);
         extras.putString("EXTRA_PASSWORD", password);
+        extras.putString("EXTRA_CONFIRM_PASSWORD", confirmPassword);
         intent.putExtras(extras);
         startActivity(intent);
     }
@@ -89,18 +92,53 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Hash and then salt the input before sending it to DB.
+     */
+    public String getValidPasswordInput(String initialPasswordInput, String confirmPasswordInput) {
+        // TODO: Check the password meets minimum security standards
+        if (isValidPassword(initialPasswordInput)) {
+
+        }
+        else {
+            // TODO: Prompt users to reenter passwords if they don't match
+            return confirmPasswordInput;
+        }
+
+        // TODO: Hash the password
+        // TODO: Salt the password
+        String hashedPassword = getHash(initialPasswordInput);
+        String hashedConfirmPassword = getHash(confirmPasswordInput);
+
+        if (hashedPassword.equals(hashedConfirmPassword)) {
+            return hashedPassword;
+        }
+        else {
+            // TODO: Prompt users to reenter passwords if they don't match
+            return hashedConfirmPassword;
+        }
+    }
+
+    /**
      * Process the input to editTextPassword:
      *   Must be 8 characters or more and contain 3 of the following:
      *      - Uppercase letter(s)
      *      - Lowercase letter(s)
      *      - Digit(s)
      *      - Special character(s): (~!@#$%^&*_-+=`|\(){}[]:;"'<>,.?/)
-     * Hash and then salt the input before sending it to DB.
      */
-    public String getValidPasswordInput(String initialPasswordInput) {
-        // TODO: Check the password meets minimum security standards
+    public Boolean isValidPassword(String initialPasswordInput) {
+        // TODO: Add in checks to see if input meets password criteria
+        return true;
+    }
+
+    /**
+     * Hash the user's password input
+     *
+     * WARNING: This could be completely the wrong spot for this. We
+     * may need to do it earlier on for security reasons
+     */
+    public String getHash(String passwordInput) {
         // TODO: Hash the password
-        // TODO: Salt the password
-        return initialPasswordInput;
+        return passwordInput;
     }
 }

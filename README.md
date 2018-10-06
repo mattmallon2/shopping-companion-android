@@ -8,7 +8,6 @@ The Android application component of the Shopping Companion.
 * [Working with Files](#working-with-files)
   * [Editing Page Layout](#editing-page-layout)
   * [Editing Strings](#editing-strings)
-* [Current Page Statuses](#current-page-statuses)
 * [References](#references)
 
 ## Getting Started
@@ -19,28 +18,22 @@ After cloning, to see all the remote branches run `git branch -a`, or see [this 
 
 ## Working with Files
 
-### Editing Page Layout
-
-If there's a page that already looks pretty similar to the new one, it's easiest to copy and paste. Find page layouts to copy at ```app/res/layout/*.xml```
-
 ### Editing Strings
 
 In Android Studio, strings are not hardcoded. They are stored at ```app/res/values/strings.xml```
 
-## Current Page Statuses
+### Editing Page Layout
 
-* activity_main.xml
-  * The main entry point to the app. Returning users may log in here.
-  * **Finished layout. No functionality. No links between pages.**
-
-* sign_up.xml
-  * New users may sign in here.
-  * **Just getting started.**
+If there's a page that already looks pretty similar to the new one, it's easiest to copy and paste. Find page layouts to copy at ```app/res/layout/*.xml```
 
 ## References
 
 * **Git**
   * [How to push correctly and common ways to push wrong](https://longair.net/blog/2011/02/27/an-asymmetry-between-git-pull-and-git-push/)
   * [Great walkthrough on stashing](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
+  * [How to create a feature branch off of develop, then merge it back into develop before pushing to remote](https://stackoverflow.com/questions/4470523/create-a-branch-in-git-from-another-branch)
 * **Android Studio**
   * [Build your first app](https://developer.android.com/training/basics/firstapp/)
+  * [Bundling multiple extras for intent.putExtra(this, NameOfActivity.class)](https://stackoverflow.com/questions/8452526/android-can-i-use-putextra-to-pass-multiple-values)
+* **General**
+  * [Stack Overflow FAQ](https://stackoverflow.com/questions/22937618/reference-what-does-this-regex-mean/22944075#22944075)

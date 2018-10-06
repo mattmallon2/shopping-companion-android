@@ -3,7 +3,6 @@
 
     <string name="button_at_store">I\'m at the store</string>
     <string name="button_change_password">Change password</string>
-    <string name="button_forgot_password">Forgot password</string>
     <string name="button_log_in">Log in</string>
     <string name="button_log_out">Log out</string>
     <string name="button_sign_up">Sign up</string>
@@ -18,15 +17,21 @@
     <string name="edit_password">Enter password</string>
     <string name="edit_username">Enter username</string>
 
+    <string name="link_forgot_password">Forgot password</string>
+
+    <string name="title_after_forgot_password">Check your email</string>
     <string name="title_change_password">Change password</string>
     <string name="title_customer_id">Please enter your 12-digit customer ID</string>
     <string name="title_forgot_password">Forgot password</string>
+    <string name="title_link_to_customer">The QR Code Reader will eventually go here.</string>
     <string name="title_log_in">Welcome back!</string>
     <string name="title_sign_up">Welcome to ARGC’s Shopping Companion</string>
 
-    <string name="subtitle_change_password">Choose a new password</string>
-    <string name="subtitle_customer_id">This can be found near the barcode on your ARGC Rewards Card</string>
-    <string name="subtitle_forgot_password">Check your email for a secure link to get back into your account</string>
-    <string name="subtitle_log_in">Log in here</string>
-    <string name="subtitle_sign_up">Sign up here</string>
+    <string name="subtitle_after_forgot_password">Check your email for a secure link to get back into your account.</string>
+    <string name="subtitle_change_password">Choose a new password.</string>
+    <string name="subtitle_customer_id">This can be found near the barcode on your ARGC Rewards Card.</string>
+    <string name="subtitle_forgot_password">Enter the email address associated with your account. We\'ll send you a secure link to reset your password.</string>
+    <string name="subtitle_link_to_customer">For now we\'ll print input from MainActivity even though it still hasn\'t been processed fully.</string>
+    <string name="subtitle_log_in">Log in here.</string>
+    <string name="subtitle_sign_up">Sign up here.</string>
 </resources>
