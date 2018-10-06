@@ -9,6 +9,7 @@ The Android application component of the Shopping Companion.
   * [Editing Page Layout](#editing-page-layout)
   * [Editing Strings](#editing-strings)
 * [Current Page Statuses](#current-page-statuses)
+* [References](#references)
 
 ## Getting Started
 
@@ -35,3 +36,11 @@ In Android Studio, strings are not hardcoded. They are stored at ```app/res/valu
 * sign_up.xml
   * New users may sign in here.
   * **Just getting started.**
+
+## References
+
+* **Git**
+  * [How to push correctly and common ways to push wrong](https://longair.net/blog/2011/02/27/an-asymmetry-between-git-pull-and-git-push/)
+  * [Great walkthrough on stashing](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
+* **Android Studio**
+  * [Build your first app](https://developer.android.com/training/basics/firstapp/)
